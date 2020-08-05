@@ -11,11 +11,9 @@ public class Main
 
     	Collection<String> list = Arrays.asList("aaryanna", "aayanna", "airianna", "alassandra", "allanna", "allannah", "allessandra");
 		String prefix ="aa";
-		List<String> distinctElements = list.stream().distinct().collect(Collectors.toList());
         List<String> c = list.stream().filter(e -> e.startsWith(prefix)).collect(Collectors.toList());
 
        c.stream().distinct().forEach(b -> System.out.println(b+b.chars().distinct().count() ));
-//c.stream().distinct().forEach(b -> System.out.println(b+b.chars().distinct()));
 
 
         
